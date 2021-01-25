@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+  <script type="text/javascript">
+    let sample = angular.module("sample", []);
+
+    sample.controller("emp", ["$scope", function($scope) {
+      $scope.name = "Jag";
+    }])
+
+    sample.controller("empDetails", ["$scope", function($scope) {
+      $scope.sal = 34000;
+      $scope.dept = "Sales";
+    }])
+  </script>
+</head>
+<body ng-app="sample">
+  <div ng-controller="empDetails">
+    {{ sal }}
+    <div ng-controller="emp">
+      {{ name }}
+      <br>
+      {{ dept }}
+    </div>
+  </div>
+</body>
+</html>

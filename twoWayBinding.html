@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+  <script type="text/javascript" src="twoWayBinding.js"></script>
+</head>
+<body>
+  <div ng-controller="emp">
+    <div>
+      Value of a is {{ a }},
+      but you can change
+      <input type=text ng-model="a"><br>
+
+      Value of a is {{ b }},
+      but you can change
+      <input type=text ng-model="b"><br>
+    </div>
+    Sum = {{ sum }}<br>
+    <button ng-click="doSum()">Calculate</button>
+  </div>
+</body>
+</html>
