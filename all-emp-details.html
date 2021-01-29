@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>Employee Details</h4>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4"><strong>Employee No:</strong></div>
+      <div class="col-sm-7">{{oEmp.empId}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4"><strong>Name:</strong></div>
+      <div class="col-sm-7">{{oEmp.name}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4"><strong>Salary:</strong></div>
+      <div class="col-sm-7">{{oEmp.sal}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4"><strong>Hire Date:</strong></div>
+      <div class="col-sm-7">{{oEmp.hiredate | date: 'medium'}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4"><strong>DOB:</strong></div>
+      <div class="col-sm-7">{{oEmp.dob | date: 'medium'}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4"><strong>Department:</strong></div>
+      <div class="col-sm-7">{{oEmp.deptId}}</div>
+    </div>
+  </div>
+</div>
