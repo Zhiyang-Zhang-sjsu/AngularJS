@@ -1,7 +1,6 @@
 let app = angular.module("app", []);
 app.controller("emp", ["$scope", "empService", function($scope, empService) {
   empService.getEmployees(function(r) {
-    console.log(r)
     $scope.employees = r;
   });
 }]);
